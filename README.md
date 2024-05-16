@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="https://your-logo-url.com" alt="Namaste Tadka Logo" width="200">
+  <img src="./src/assets/NamsteTadkaFav.webp" alt="Namaste Tadka Logo" width="200">
   <br>
   Namaste Tadka
 </h1>
