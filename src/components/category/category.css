@@ -1,0 +1,134 @@
+.dish__filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.75rem;
+  margin-bottom: var(--mb-2);
+}
+
+.dish__item {
+  cursor: pointer;
+  color: var(--title-color);
+  padding: 0.25rem 0.75rem;
+  font-weight: var(--font-medium);
+  border-radius: 1rem;
+  text-transform: capitalize;
+  border: 1px solid var(--title-color);
+}
+
+.dish__item:hover {
+  background-color: var(--title-color);
+  color: var(--container-color);
+}
+
+.dish__container {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  gap: 2rem;
+  justify-content: center;
+}
+
+.dish__card {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1.25rem;
+  border-radius: 1rem;
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dish__card.fade-in {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.dish__img {
+  width: 295px;
+  border-radius: 1rem;
+  margin-bottom: var(--mb-1);
+  box-shadow: 0 0 0 4px var(--title-color);
+  transition: box-shadow 0.3s ease;
+}
+
+.dish__card:hover .dish__img {
+  box-shadow: 0 0 0 6px var(--container-color);
+}
+
+.dish__title {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-0-5);
+}
+
+.dish__button {
+  color: var(--text-color);
+  font-size: var(--small-font-size);
+  display: flex;
+  align-items: center;
+  column-gap: 0.25rem;
+}
+
+.dish__button-icon {
+  font-size: var(--small-font-size);
+  transition: transform 0.4s;
+}
+
+.dish__button:hover .dish__button-icon {
+  transform: translateX(0.25rem);
+}
+
+/* Active Work */
+.active-work {
+  background-color: var(--title-color);
+  color: var(--container-color);
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+  .dish__container {
+    gap: 1.25rem;
+  }
+
+  .dish__card {
+    padding: 1rem;
+  }
+
+  .dish__img {
+    margin-bottom: 0.75rem;
+  }
+
+  .dish__title {
+    margin-bottom: 0.25rem;
+  }
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+  .dish__container {
+    grid-template-columns: max-content;
+  }
+}
+
+/* For medium-small devices */
+@media screen and (max-width: 576px) {
+  .dish__container {
+    grid-template-columns: 1fr;
+  }
+
+  .dish__img {
+    width: 100%;
+  }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+  .dish__item {
+    font-size: var(--small-font-size);
+  }
+
+  .dish__filters {
+    column-gap: 0.25rem;
+  }
+}

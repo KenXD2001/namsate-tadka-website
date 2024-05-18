@@ -2,7 +2,7 @@ import React from 'react';
 import "./App.css";
 import Header from './components/header/header';
 import Home from './components/home/home';
-// import About from './components/about/about';
+import Category from './components/category/category';
 // import Skills from './components/skills/skills';
 // import Services from './components/services/services';
 // import Qualification from './components/qualification/qualification';
@@ -19,6 +19,7 @@ const App = () => {
 
       <main className='main'>
         <Home />
+        <Category />
         {/* <About /> */}
         {/* <Skills /> */}
         {/* <Services /> */}

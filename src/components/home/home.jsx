@@ -4,26 +4,28 @@ import "./home.css";
 // import Data from './data';
 import ScrollDown from './scrollDown';
 import BannerSlider from './bannerSlider';
+import Logo from "../../assets/NamsteTadkaLogo.webp"
 
 
 const Home = () => {
     return (
-        <div>
-            <section className="home__section section" id='home'>
-                <BannerSlider />
-                <div className="home__container container grid">
-                    <div className="home__content grid">
-                        {/* <Social /> */}
+        <section className="home__section section" id='home'>
+            <div className='center__logo-div'>
+                <img className='center__logo' src={Logo} alt="" />
+            </div>
+            <BannerSlider />
+            <div className="home__container container grid">
+                <div className="home__content grid">
+                    {/* <Social /> */}
 
-                        {/* <div className='home__img'></div> */}
+                    {/* <div className='home__img'></div> */}
 
-                        {/* <Data /> */}
-                    </div>
-
-                    <ScrollDown />
+                    {/* <Data /> */}
                 </div>
-            </section>
-        </div>
+
+                <ScrollDown />
+            </div>
+        </section>
     )
 }
 
