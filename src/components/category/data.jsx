@@ -48,9 +48,21 @@ export const projectsNav = [
         name: "non-veg"
     },
     {
-        name: "fastfood",
+        name: "fast-food",
     },
     {
         name: "deserts",
+    },
+    {
+        name: "break-fast"
+    },
+    {
+        name: "lunch"
+    },
+    {
+        name: "dinner"
+    },
+    {
+        name: "beverages"
     },
 ];
