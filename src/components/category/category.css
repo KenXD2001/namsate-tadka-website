@@ -63,19 +63,35 @@
 
 .dish__button {
   color: var(--text-color);
-  font-size: var(--small-font-size);
+  font-size: var(--smaller-font-size);
   display: flex;
   align-items: center;
   column-gap: 0.25rem;
+  border: 2px solid var(--title-color);
+  width: min-content;
+  border-radius: 10px;
+  padding: 1px 8px;
+  transition: 0.3s ease;
+  font-weight: bold;
+}
+
+.dish__button:hover {
+  color: #fff;
+  background-color: var(--title-color);
 }
 
 .dish__button-icon {
-  font-size: var(--small-font-size);
-  transition: transform 0.4s;
+  font-size: var(--smaller-font-size);
+  transition: transform 0.3s;
 }
 
 .dish__button:hover .dish__button-icon {
   transform: translateX(0.25rem);
+}
+
+.cusFlex {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Active Work */
