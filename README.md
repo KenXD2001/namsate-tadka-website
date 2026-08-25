@@ -1,72 +1,93 @@
-<h1 align="center">
-  <img src="./src/assets/NamsteTadkaFav.webp" alt="Namaste Tadka Logo" width="200">
-  <br>
-  Namaste Tadka
-</h1>
+# Namaste Tadka - Indian Recipes Web App
 
-<p align="center">
-  Your one-stop destination for delicious recipes!
-</p>
+A modern Indian recipes and dishes web application built with React, TypeScript, Vite, Tailwind CSS, and Lucide React icons.
 
----
+**Built by NovaSoft Technologies**
 
-## 🍽️ Introduction
+## 🍛 About
 
-Welcome to Namaste Tadka - your ultimate destination for mouthwatering recipes! Whether you're craving vegetarian delights, sumptuous non-vegetarian dishes, delightful desserts, quick and easy fast foods, or hearty breakfast options, we've got you covered. With our user-friendly interface and extensive collection of recipes, you'll embark on a culinary journey like never before!
+Namaste Tadka is a comprehensive Indian recipes web application that helps home cooks discover authentic Indian dishes with step-by-step cooking instructions, ingredients lists, cooking times, and expert tips.
 
----
+## Features
 
-## 📚 Features
+- ⚡ Vite for fast development
+- ⚛️ React 19 with TypeScript
+- 🎨 Tailwind CSS for styling
+- 📁 Professional folder structure
+- 🔄 Reusable components
+- 📦 React Router for navigation
+- 🎯 Lucide React icons
+- 📱 Responsive design
+- 🌐 Environment-based configuration
+- 📚 Recipe-focused content
 
-- **Wide Range of Recipes**: Explore a diverse range of recipes spanning across various cuisines and meal types.
-- **Search Functionality**: Easily find your favorite recipes by searching based on ingredients or dish names.
-- **Detailed Instructions**: Access step-by-step instructions along with ingredients and cooking methods for each recipe.
-- **Downloadable PDFs**: Download recipe PDFs for offline access or printing convenience.
-- **Mobile Responsive**: Enjoy seamless browsing and cooking experience across all devices.
+## Project Structure
 
----
+```
+src/
+├── components/
+│   ├── ui/           # Reusable UI components
+│   │   ├── Button.tsx
+│   │   ├── Card.tsx
+│   │   ├── Input.tsx
+│   │   └── Badge.tsx
+│   └── layout/       # Layout components
+│       ├── Header.tsx
+│       └── Footer.tsx
+├── pages/            # Page components
+│   └── HomePage.tsx
+├── hooks/            # Custom hooks
+│   └── useLocalStorage.ts
+├── lib/              # Utilities
+│   └── utils.ts
+├── config/           # Environment config
+│   └── env.ts
+├── types/            # TypeScript types
+├── utils/            # Helper functions
+│   └── formatters.ts
+├── styles/           # Global styles
+└── assets/           # Static assets
+```
 
-## 🚀 Getting Started
+## Configuration
 
-To run Namaste Tadka locally, follow these simple steps:
+The app uses environment variables for configuration. Copy `.env.example` to `.env` and update values:
 
-1. Clone this repository: `git clone https://github.com/your-username/namaste-tadka.git`
-2. Navigate to the project directory: `cd namaste-tadka`
-3. Install dependencies: `npm install`
-4. Start the development server: `npm start`
-5. Open [http://localhost:3000](http://localhost:3000) in your browser.
+```env
+VITE_HOST=0.0.0.0
+VITE_PORT=3333
+VITE_APP_NAME=Namaste Tadka
+VITE_APP_TITLE=Namaste Tadka - Authentic Indian Recipes & Dishes
+VITE_APP_BUILT_BY=NovaSoft Technologies
+```
 
----
+## Getting Started
 
-## 📝 Contribution Guidelines
+```bash
+# Install dependencies
+npm install
 
-We welcome contributions from the community! If you'd like to contribute to Namaste Tadka, please follow these guidelines:
+# Start development server
+npm run dev
 
-- Fork the repository.
-- Create a new branch for your feature or bug fix.
-- Make your changes and ensure that the code is properly formatted.
-- Test your changes thoroughly.
-- Submit a pull request detailing your changes.
+# Build for production
+npm run build
 
----
+# Preview production build
+npm run preview
+```
 
-## 📖 Learn More
+The app will be available at `http://localhost:3333` (configurable via `.env`)
 
-- Check out the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started) to learn more about bootstrapping React apps.
-- Explore the [React documentation](https://reactjs.org/) to deepen your understanding of React.
+## Available Scripts
 
----
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run linter
 
-## 📞 Contact
+## Built by NovaSoft Technologies
 
-Have questions or suggestions? Feel free to reach out to us:
+Copyright © 2024 NovaSoft Technologies. All rights reserved.
 
-- Email: contact@namaste-tadka.com
-- Twitter: [@NamasteTadka](https://twitter.com/NamasteTadka)
-- Instagram: [@namaste.tadka](https://www.instagram.com/namaste.tadka/)
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This application showcases authentic Indian recipes and cooking techniques for home chefs worldwide.

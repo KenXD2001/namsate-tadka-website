@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+
+  /* Premium warm palette */
+  --color-saffron-50: #fef8ee;
+  --color-saffron-100: #fdeed3;
+  --color-saffron-200: #fadba5;
+  --color-saffron-300: #f6c16c;
+  --color-saffron-400: #f2a13d;
+  --color-saffron-500: #ec861b;
+  --color-saffron-600: #de6a12;
+  --color-saffron-700: #b84f12;
+  --color-saffron-800: #933f15;
+  --color-saffron-900: #783514;
+
+  --color-charcoal-50: #f6f6f5;
+  --color-charcoal-100: #e7e6e3;
+  --color-charcoal-200: #cfcdc7;
+  --color-charcoal-300: #ada99f;
+  --color-charcoal-400: #898477;
+  --color-charcoal-500: #6f6a5e;
+  --color-charcoal-600: #58544b;
+  --color-charcoal-700: #46443d;
+  --color-charcoal-800: #2b2a26;
+  --color-charcoal-900: #1c1b18;
+
+  --color-cream: #faf7f2;
+}
+
+html {
+  font-family: var(--font-sans);
+}
+
+body {
+  @apply bg-cream text-charcoal-900 antialiased;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+@layer utilities {
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
